@@ -1,0 +1,150 @@
+/* body{
+    /* background: linear-gradient(to bottom right, rgb(143, 225, 255), rgb(204, 255, 208)); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: center center; */
+    /* background-size: cover */
+/* }  */
+.tokutyo_title{
+    font-size: 40px;
+    text-align: center;
+    
+    
+
+}
+.tokutyo{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.tokutyo1{
+    float: left;
+    /* height: 470px; */
+    margin-right: 100px;
+    position: relative;
+    margin-top: auto;
+    width:25%;   
+    padding: 0.5em 1em;
+    border: solid 3px #10adb9;
+    background: #FFF;
+    border-radius: 8px;
+}
+.tokutyo1 .box-title{
+    position: absolute;
+    display: inline-block;
+    top: -5%;
+    left: 20px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 35px;
+    color: #10adb9;
+    background: #FFF;
+    font-weight: bold;
+}
+.tokutyo1 h1{
+    font-size: 25px;
+    color: #0b868f;
+    
+}
+.tokutyo1 p{
+    font-size: 20px;
+    margin: 5; 
+    padding: 0;
+    text-align: left;
+}
+
+
+.tokutyo2{
+    float: left;
+    /* height: 470px; 枠の高さ*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: auto;
+    width:25%;   
+    padding: 0.5em 1em;
+    border: solid 3px #10adb9;
+    background: #FFF;
+    border-radius: 8px;
+}
+.tokutyo2 .box-title{
+    position: absolute;
+    display: inline-block;
+    top: -5%;
+    left: 20px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 35px;
+    color: #10adb9;
+    background: #FFF;
+    font-weight: bold;
+}
+.tokutyo2 h1{
+    font-size: 25px;
+    color: #0b868f;
+}
+.tokutyo2 p{
+    font-size: 20px;
+    margin: 5; 
+    padding: 0;
+    text-align: left;
+}
+.tokutyo3{
+    float: right;
+    /* height: 470px; */
+    position: relative;
+    margin-top: auto;
+    width:25%;   
+    padding: 0.5em 1em;
+    border: solid 3px #10adb9;
+    background: #FFF;
+    border-radius: 8px;
+}
+.tokutyo3 .box-title{
+    position: absolute;
+    display: inline-block;
+    top: -5%;
+    left: 20px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 35px;
+    color: #10adb9;
+    background: #FFF;
+    font-weight: bold;
+}
+.tokutyo3 h1{
+    font-size: 25px;
+    color: #0b868f;
+}
+.tokutyo3 p{
+    font-size: 20px;
+    margin: 5; 
+    padding: 0;
+    text-align: left;
+}
+.gakusei{
+    margin-top: 20px;
+    height: 180px;
+    width: 270px;
+}
+@media (max-width: 700px){
+    .tokutyo1{
+        display: block;
+        width: 90%;
+        margin-left: 27px;
+        margin-bottom: 80px;
+    }
+
+    .tokutyo2{
+        display: block;
+        width: 90%;
+        margin-left: 27px;
+        margin-bottom: 80px;
+    }
+
+    .tokutyo3{
+        display: block;
+        width: 90%;
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,270 @@
+
+
+/* menu.css */
+/*.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+   /* width:94%;
+    margin:0 auto;
+}
+
+/*.slider img {
+    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+   /* height:auto;
+}
+
+.slider .slick-slide {
+	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	/*transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+	/*opacity: 0.5;/*透過50%
+}
+
+/*.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	/*opacity: 1;/*透過なし
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+/*.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+   /* top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+   /* outline: none;/*クリックをしたら出てくる枠線を消す*/
+    /*border-top: 2px solid #666;/*矢印の色*/
+    /*border-right: 2px solid #666;/*矢印の色*/
+   /* height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    /*left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+   /* right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+/*.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    /* height:8px;ドットボタンのサイズ */
+   /* display:block; */
+    /* border-radius:50%; */
+    /* background:#ccc;/*ドットボタンの色 */
+/* } */
+
+/* .slick-dots .slick-active button{ */
+    /* background:#333;/*ドットボタンの現在地表示の色 */
+/* }*/ */
+h1{color: #4d4d4d;
+    text-shadow: 4px 5px 6px #ffffff;
+    margin-top: 40px;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(143, 225, 255), rgb(204, 255, 208));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.aaa{
+    display: flex;               /* Flexboxを使って横並びにする */
+    justify-content: center;     /* 要素を中央寄せにする */
+    gap: 5%;
+}
+
+.boys , .girls{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 190px;
+    margin: 30px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color:rgb(119, 215, 250);/*:#3dca7a;*/
+    border-bottom: 2px solid rgb(119, 215, 250);
+    border-radius: 100vh;
+    background: #fff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+
+}
+.boys:hover , .girls:hover{
+    color: #fff;
+    background: rgb(153, 228, 255);
+    border-bottom: 2px solid #fff;
+    transform: translateY(3px);
+}
+
+/*.heart {
+    width: 100px;
+    height: 100px;
+    background: url(https://nelog.jp/wp-content/uploads/2016/03/heart_animation.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+  }
+.heart:hover {
+    background-position: -2800px 0;
+    -webkit-transition: background 1s steps(28);
+    transition: background 1s steps(28);
+  }*/
+  
+
+  .box{
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+  .bubbly-button{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3em;
+    padding: 0.5em 0.5em;
+    -webkit-appearance: none;
+    appearance: none;
+    color: button-bg;
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  }
+     i{
+      position:relative;
+      z-index:-1;
+    }
+    &:focus {
+      outline: 0;
+    }
+    
+    &:before, &:after{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 150%;
+      height: 70%;
+      left: -20%;
+      z-index: -1000;
+      transition: all ease-in-out 0.5s;
+      background-repeat: no-repeat;
+    }
+    
+    &:before{
+      display: none;
+      top: -35%;
+      background-image:  
+        radial-gradient(circle, purple 10%, transparent 20%),
+      radial-gradient(circle,  transparent 10%, purple 20%, transparent 30%),
+      radial-gradient(circle, purple 10%, transparent 20%), 
+      radial-gradient(circle, purple 10%, transparent 20%),
+      radial-gradient(circle,  transparent 5%, purple 15%, transparent 20%),
+      radial-gradient(circle, yellow 10%, transparent 20%),
+      radial-gradient(circle, yellow 10%, transparent 20%),
+      radial-gradient(circle, yellow 10%, transparent 20%),
+      radial-gradient(circle, yellow 10%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    /*background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;*/
+    }
+    
+    &:after{
+      display: none;
+      bottom: -35%;
+      background-image:  
+      radial-gradient(circle, blue 10%, transparent 20%), 
+      radial-gradient(circle, blue 10%, transparent 20%),
+      radial-gradient(circle,  transparent 5%, blue 15%, transparent 20%),
+      radial-gradient(circle, blue 10%, transparent 20%),
+      radial-gradient(circle, green 10%, transparent 20%),
+      radial-gradient(circle, green 10%, transparent 20%),
+      radial-gradient(circle, green 10%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+   
+    &:active{
+      transform: scale(0.9);
+      color:#ce89ff;
+    }
+    
+    &.animate{
+      &:before{
+        display: block;
+        animation: topBubbles ease-in-out 0.75s forwards;
+      }
+      &:after{
+        display: block;
+        animation: bottomBubbles ease-in-out 0.75s forwards;
+      }
+    }
+  
+  
+  @keyframes topBubbles {
+    0%{
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+      50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
+   100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  @keyframes bottomBubbles {
+    0%{
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+   100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  
+  
+  @keyframes topBubbles {
+    0%{
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+      50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
+   100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  @keyframes bottomBubbles {
+    0%{
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+   100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
